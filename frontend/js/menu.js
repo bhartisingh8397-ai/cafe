@@ -223,7 +223,6 @@ async function initMenu() {
         const json = await response.json();
         if (json.data && Array.isArray(json.data) && json.data.length > 0) {
             allMenuItems = json.data;
-            updateStatusIndicator(statusContainer, true, `Connected to Spring Boot API (${allMenuItems.length} items loaded from MySQL)`);
         } else {
             throw new Error('Empty dataset from API');
         }
@@ -231,11 +230,6 @@ async function initMenu() {
         console.warn('Backend API connection notice:', error.message);
         // Seamless fallback to rich sample dataset
         allMenuItems = SAMPLE_MENU_ITEMS;
-        updateStatusIndicator(
-            statusContainer,
-            false,
-            'Live Backend Offline — Showing Demonstration Menu Data (Ready to sync with MySQL on backend start)'
-        );
     }
 
     renderMenu();
