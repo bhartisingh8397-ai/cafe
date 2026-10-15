@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="cafeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C67D3E"/>
+      <stop offset="100%" stop-color="#6F4E37"/>
+    </linearGradient>
+    <linearGradient id="steamGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#C67D3E" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F5EBE6" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Badge -->
+  <rect width="64" height="64" rx="16" fill="url(#cafeGrad)"/>
+  
+  <!-- Steam Trails -->
+  <path d="M24 16 Q26 12 24 8" stroke="#FFF7ED" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.85"/>
+  <path d="M32 17 Q35 12 32 6" stroke="#FFF7ED" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.95"/>
+  <path d="M40 16 Q42 12 40 8" stroke="#FFF7ED" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.85"/>
+  
+  <!-- Coffee Cup Body -->
+  <path d="M16 23 H46 V39 C46 47 40 51 31 51 C22 51 16 47 16 39 Z" fill="#FFFFFF"/>
+  
+  <!-- Coffee Liquid Accent -->
+  <path d="M19 26 H43 V32 C43 32 39 34 31 34 C23 34 19 32 19 32 Z" fill="#4B2E1E" opacity="0.25"/>
+  
+  <!-- Cup Handle -->
+  <path d="M46 27 H49 C53 27 55 30 55 34 C55 38 53 41 49 41 H46" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  
+  <!-- Cup Saucer -->
+  <path d="M12 55 Q31 57 50 55" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+</svg>

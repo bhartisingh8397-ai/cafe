@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudha Cafe | A Little Happiness in Every Cup</title>
+    <meta name="description" content="Welcome to Sudha Cafe - Freshly brewed specialty coffee, artisanal teas, handcrafted paninis, and decadent desserts in a warm, cozy ambiance.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Sudha Cafe - Specialty Coffee & Delights">
+    <meta property="og:description" content="Freshly brewed coffee, delightful bites, and moments worth slowing down for.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="site-header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" id="logo-link">
+                <div class="logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                <span>Sudha Cafe</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="mobile-drawer-cta" style="display: none;">
+                        <a href="menu.html" class="btn btn-primary" style="width: 100%;">Explore Menu</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="menu.html" class="btn btn-primary" id="nav-explore-btn">Explore Menu</a>
+            </div>
+
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tagline">
+                    <span><i class="fa-solid fa-sparkles"></i></span> Premium Specialty Coffee &amp; Bakery
+                </div>
+                <h1 class="hero-title">A Little Happiness in Every Cup</h1>
+                <p class="hero-subtitle">
+                    Freshly brewed coffee, delightful bites, and moments worth slowing down for. Roasted from single-origin beans and served with warm hospitality.
+                </p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary" id="hero-menu-btn">Explore Our Menu</a>
+                    <a href="about.html" class="btn btn-secondary" id="hero-about-btn">Discover Our Story</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Arabica Beans</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>18+</h3>
+                        <p>Artisan Recipes</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>4.9 <i class="fa-solid fa-star" style="font-size: 0.75em; color: var(--color-caramel);"></i></h3>
+                        <p>Customer Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Menu Items Section -->
+    <section class="featured-section" id="featured">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-badge">Chef's Recommendations</span>
+                <h2 class="section-title">Featured Delights</h2>
+                <p class="section-subtitle">
+                    Handcrafted beverages and gourmet savory selections curated daily by our master baristas and chefs.
+                </p>
+            </div>
+
+            <div class="grid-3" id="featured-grid">
+                <!-- Card 1 -->
+                <article class="menu-card">
+                    <div class="menu-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80" alt="Velvet Cappuccino" class="menu-card-img" loading="lazy">
+                        <span class="menu-card-category">Coffee</span>
+                        <span class="menu-card-price-badge">₹189.00</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Velvet Cappuccino</h3>
+                        <p class="menu-card-desc">Classic espresso topped with silky, velvety steamed milk and a dusting of Dutch cocoa.</p>
+                        <div class="menu-card-footer">
+                            <span class="badge-available">Available Today</span>
+                            <a href="menu.html" class="btn btn-light" style="padding: 7px 18px; font-size: 0.85rem;">View in Menu</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="menu-card">
+                    <div class="menu-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&q=80" alt="Caramel Macchiato" class="menu-card-img" loading="lazy">
+                        <span class="menu-card-category">Coffee</span>
+                        <span class="menu-card-price-badge">₹219.00</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Caramel Macchiato</h3>
+                        <p class="menu-card-desc">Freshly steamed milk with vanilla syrup marked with espresso and drizzled with caramel.</p>
+                        <div class="menu-card-footer">
+                            <span class="badge-available">Available Today</span>
+                            <a href="menu.html" class="btn btn-light" style="padding: 7px 18px; font-size: 0.85rem;">View in Menu</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="menu-card">
+                    <div class="menu-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Masala Chai Royale" class="menu-card-img" loading="lazy">
+                        <span class="menu-card-category">Tea</span>
+                        <span class="menu-card-price-badge">₹99.00</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Masala Chai Royale</h3>
+                        <p class="menu-card-desc">Traditional slow-brewed Assam CTC black tea infused with cardamom, ginger, and whole milk.</p>
+                        <div class="menu-card-footer">
+                            <span class="badge-available">Available Today</span>
+                            <a href="menu.html" class="btn btn-light" style="padding: 7px 18px; font-size: 0.85rem;">View in Menu</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="menu-card">
+                    <div class="menu-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80" alt="Classic Iced Cold Brew" class="menu-card-img" loading="lazy">
+                        <span class="menu-card-category">Cold Beverages</span>
+                        <span class="menu-card-price-badge">₹209.00</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Classic Iced Cold Brew</h3>
+                        <p class="menu-card-desc">Steeped for 18 hours in cold filtered water for an ultra-smooth, naturally sweet coffee punch.</p>
+                        <div class="menu-card-footer">
+                            <span class="badge-available">Available Today</span>
+                            <a href="menu.html" class="btn btn-light" style="padding: 7px 18px; font-size: 0.85rem;">View in Menu</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="menu-card">
+                    <div class="menu-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80" alt="Gourmet Paneer Tikka Panini" class="menu-card-img" loading="lazy">
+                        <span class="menu-card-category">Sandwiches</span>
+                        <span class="menu-card-price-badge">₹229.00</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Paneer Tikka Panini</h3>
+                        <p class="menu-card-desc">Char-grilled cottage cheese cubes with tandoori spices, bell peppers, and molten mozzarella.</p>
+                        <div class="menu-card-footer">
+                            <span class="badge-available">Available Today</span>
+                            <a href="menu.html" class="btn btn-light" style="padding: 7px 18px; font-size: 0.85rem;">View in Menu</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="menu-card">
+                    <div class="menu-card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" alt="Belgian Dark Chocolate Lava Cake" class="menu-card-img" loading="lazy">
+                        <span class="menu-card-category">Desserts</span>
+                        <span class="menu-card-price-badge">₹199.00</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <h3 class="menu-card-title">Dark Chocolate Lava Cake</h3>
+                        <p class="menu-card-desc">Decadent warm chocolate cake with a molten truffle center, dusted with fine icing sugar.</p>
+                        <div class="menu-card-footer">
+                            <span class="badge-available">Available Today</span>
+                            <a href="menu.html" class="btn btn-light" style="padding: 7px 18px; font-size: 0.85rem;">View in Menu</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="menu.html" class="btn btn-primary" id="view-full-menu-btn">View Full Menu (18+ Items)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us-section" id="why-us">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-badge">Our Commitment</span>
+                <h2 class="section-title">Why Choose Sudha Cafe</h2>
+                <p class="section-subtitle">
+                    We treat coffee brewing as both an art and a science, committed to sustainable sourcing and genuine warmth.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper"><i class="fa-solid fa-seedling"></i></div>
+                    <h3 class="feature-title">Fresh Ingredients</h3>
+                    <p class="feature-desc">Locally sourced farm produce, organic whole spices, and artisan bread baked fresh every single morning.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper"><i class="fa-solid fa-mug-saucer"></i></div>
+                    <h3 class="feature-title">Quality Coffee</h3>
+                    <p class="feature-desc">100% Arabica beans ethically sourced from shade-grown estates in Chikmagalur and freshly ground per cup.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper"><i class="fa-solid fa-couch"></i></div>
+                    <h3 class="feature-title">Cozy Atmosphere</h3>
+                    <p class="feature-desc">Warm aesthetic lighting, mellow acoustic playlists, plush seating, and high-speed Wi-Fi for work or leisure.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrapper"><i class="fa-solid fa-heart"></i></div>
+                    <h3 class="feature-title">Friendly Service</h3>
+                    <p class="feature-desc">Passionate baristas dedicated to remembering your favorite brew and crafting every order with a genuine smile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Banner Section -->
+    <section class="special-offer-section" id="offers">
+        <div class="container">
+            <div class="offer-card">
+                <div class="offer-content">
+                    <span class="offer-badge">Limited Time Promotion</span>
+                    <h2 class="offer-title">Coffee &amp; Dessert Delight Combo</h2>
+                    <p class="offer-desc">
+                        Pair any handcrafted specialty beverage with our signature Belgian Chocolate Lava Cake or New York Cheesecake and enjoy an exclusive 25% discount.
+                    </p>
+                    <a href="menu.html" class="btn btn-primary" id="claim-offer-btn">Explore Combo Menu</a>
+                    <p class="offer-disclaimer">*Illustrative promotional offer designed for BCA Minor Project demonstration.</p>
+                </div>
+                <div class="offer-visual">
+                    <div class="offer-circle">
+                        <span class="save-text">Save Up To</span>
+                        <span class="percent">25%</span>
+                        <span class="subtext">On Pairings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cafe Experience Gallery Section -->
+    <section class="experience-section" id="experience">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-badge">Atmosphere</span>
+                <h2 class="section-title">The Cafe Experience</h2>
+                <p class="section-subtitle">
+                    Immerse yourself in our tranquil space designed for slow mornings, productive afternoons, and cozy evening reunions.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item span-2 row-2">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80" alt="Cafe Bar Seating" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-overlay-text">Artisan Brew Bar &amp; Espresso Station</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Fresh Pour Over Coffee" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-overlay-text">Single-Origin Manual Pour Over</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Cozy Interior Booths" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-overlay-text">Cozy Reading &amp; Work Corners</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=600&q=80" alt="Fresh Bakery Goods" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-overlay-text">Daily Baked French Pastries</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" alt="Latte Art Cup" class="gallery-img" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-overlay-text">Handcrafted Latte Art</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-badge">Community Love</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+                <p class="section-subtitle">
+                    Honest feedback from coffee lovers who make Sudha Cafe their everyday home away from home.
+                </p>
+            </div>
+
+            <div class="grid-3">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="testimonial-quote">
+                            "The Velvet Cappuccino and warm Croissants at Sudha Cafe are unmatched. The ambiance is so calming that I spend hours here coding and reading."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Aanya Sharma" class="author-avatar" loading="lazy">
+                        <div class="author-info">
+                            <h4>Aanya Sharma</h4>
+                            <p>Software Engineer</p>
+                            <span class="sample-tag">(Sample Student Demo Review)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="testimonial-quote">
+                            "Their Cold Brew steeped for 18 hours is clean, sweet, and totally addictive. Plus the baristas are genuinely courteous and know their coffee craft!"
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Rohan Verma" class="author-avatar" loading="lazy">
+                        <div class="author-info">
+                            <h4>Rohan Verma</h4>
+                            <p>Creative Designer</p>
+                            <span class="sample-tag">(Sample Student Demo Review)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div>
+                        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        <p class="testimonial-quote">
+                            "Sudha Cafe hosted our college project team meetup effortlessly. The Paneer Panini and Belgian Lava Cake were huge hits with everyone."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Priya Nair" class="author-avatar" loading="lazy">
+                        <div class="author-info">
+                            <h4>Priya Nair</h4>
+                            <p>Student &amp; Writer</p>
+                            <span class="sample-tag">(Sample Student Demo Review)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-box">
+                <span class="section-badge" style="background: rgba(255,255,255,0.15); color: var(--color-gold);">Join Us Today</span>
+                <h2 class="cta-title">Your Perfect Coffee Moment Awaits</h2>
+                <p class="cta-subtitle">
+                    Step inside for your morning wake-up cup, an afternoon treat, or quiet evening conversations. We look forward to serving you!
+                </p>
+                <a href="menu.html" class="btn btn-primary" id="cta-explore-btn">Explore Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="color: #FFFFFF; margin-bottom: 15px;">
+                        <div class="logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                        <span>Sudha Cafe</span>
+                    </div>
+                    <p class="footer-desc">
+                        A cozy haven dedicated to artisanal single-origin coffee, wholesome delicacies, and heartfelt hospitality.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" title="Instagram" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" title="Facebook" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" title="Twitter / X" aria-label="Twitter / X">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 24.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.95 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91v-1.68z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">→ Home</a></li>
+                        <li><a href="about.html">→ About Our Cafe</a></li>
+                        <li><a href="menu.html">→ Complete Menu</a></li>
+                        <li><a href="services.html">→ Cafe Services</a></li>
+                        <li><a href="contact.html">→ Contact &amp; Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Mon – Fri:</strong> 8:00 AM – 10:00 PM</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Sat – Sun:</strong> 8:00 AM – 11:00 PM</p>
+                    <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 10px; font-style: italic;">
+                        *Configurable sample schedule
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fa-solid fa-location-dot" style="margin-right: 6px; color: var(--color-caramel);"></i> 42 Heritage Promenade, Coffee Street</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fa-solid fa-phone" style="margin-right: 6px; color: var(--color-caramel);"></i> +91 98765 43210 (Demo)</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 12px;"><i class="fa-solid fa-envelope" style="margin-right: 6px; color: var(--color-caramel);"></i> hello@sudhacafe.example.com</p>
+                    <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5); font-style: italic;">
+                        *Configurable demo coordinates
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sudha Cafe. All rights reserved.</p>
+                <p class="project-credit-tag">BCA 5th Semester Minor Project | Full Stack Java Spring Boot &amp; MySQL</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

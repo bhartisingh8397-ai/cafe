@@ -1,0 +1,230 @@
+/* ===================================================================
+   SUDHA CAFE - RESPONSIVE STYLESHEET
+   Mobile, Tablet, and Desktop Breakpoints
+   =================================================================== */
+
+/* Laptop & Tablet Landscape (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 2.9rem;
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 200px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-img-collage {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Tablet Portrait & Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.1rem;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+    }
+
+    .hero-title {
+        font-size: 2.3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.05rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    /* Mobile Navigation Drawer */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: #FFFFFF;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 90px 30px 40px 30px;
+        gap: 24px;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+        transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-link {
+        font-size: 1.15rem;
+        width: 100%;
+        border-bottom: 1px solid var(--color-border-light);
+        padding-bottom: 10px;
+    }
+
+    .nav-cta {
+        display: none; /* Accessible inside mobile drawer or hero */
+    }
+
+    .mobile-drawer-cta {
+        display: block !important;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    /* Cards & Grids */
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Offer Banner */
+    .offer-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 25px;
+    }
+
+    .offer-circle {
+        margin: 0 auto;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 180px;
+    }
+
+    .gallery-item.span-2 {
+        grid-column: span 1;
+    }
+
+    .gallery-item.row-2 {
+        grid-row: span 1;
+    }
+
+    /* Contact Page Layout */
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .contact-form-container {
+        padding: 30px 20px;
+    }
+
+    .contact-info-card {
+        padding: 35px 25px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Small Smartphone (max-width: 480px) */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-title {
+        font-size: 1.95rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 210px;
+    }
+
+    .about-floating-card {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .menu-card-img-wrapper {
+        height: 190px;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+}

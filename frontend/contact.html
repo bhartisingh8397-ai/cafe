@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &amp; Location | Sudha Cafe</title>
+    <meta name="description" content="Reach out to Sudha Cafe for reservations, catering inquiries, feedback, or table bookings. Integrated with Spring Boot backend and MySQL.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="site-header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" id="logo-link">
+                <div class="logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                <span>Sudha Cafe</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li class="mobile-drawer-cta" style="display: none;">
+                        <a href="menu.html" class="btn btn-primary" style="width: 100%;">Explore Menu</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="menu.html" class="btn btn-primary">Explore Menu</a>
+            </div>
+
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Contact Header Section -->
+    <section class="services-section" style="padding: 70px 0 30px 0;">
+        <div class="container text-center">
+            <span class="section-badge">Get In Touch</span>
+            <h1 class="section-title">We'd Love to Hear From You</h1>
+            <p class="section-subtitle">
+                Have a question, feedback, or need a table reserved for a group meeting? Send us a note below and our team will get back to you promptly.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info Layout -->
+    <section class="container" style="padding-bottom: 90px;">
+        <div class="contact-layout">
+            <!-- Left Column: Cafe Contact Information -->
+            <div class="contact-info-card">
+                <div class="contact-info-header">
+                    <h3>Cafe Information</h3>
+                    <p>Stop by for fresh coffee or reach us through any channel below.</p>
+                </div>
+
+                <div>
+                    <!-- Address -->
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-text">
+                            <h5>Our Location</h5>
+                            <p>42 Heritage Promenade, Coffee Street</p>
+                            <p style="font-size: 0.8rem; color: rgba(255,255,255,0.6); font-style: italic;">(Configurable demo address)</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-text">
+                            <h5>Phone Enquiries</h5>
+                            <p>+91 98765 43210</p>
+                            <p style="font-size: 0.8rem; color: rgba(255,255,255,0.6); font-style: italic;">(Configurable sample contact)</p>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-text">
+                            <h5>Email Address</h5>
+                            <p><a href="mailto:hello@sudhacafe.example.com">hello@sudhacafe.example.com</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Opening Hours Box -->
+                    <div class="contact-hours-box">
+                        <h5><i class="fa-solid fa-clock" style="margin-right: 6px;"></i> Cafe Service Hours</h5>
+                        <p><strong>Monday – Friday:</strong> 8:00 AM – 10:00 PM</p>
+                        <p><strong>Saturday – Sunday:</strong> 8:00 AM – 11:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div>
+                    <h5 style="color: var(--color-gold); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">
+                        Follow Us
+                    </h5>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" title="Instagram" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" title="Facebook" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" title="Twitter / X" aria-label="Twitter / X">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 24.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.95 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91v-1.68z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Interactive Contact Form -->
+            <div class="contact-form-container">
+                <h3 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--color-espresso); margin-bottom: 8px;">
+                    Send Us a Message
+                </h3>
+                <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 25px;">
+                    Enquiries are validated and safely stored in the MySQL database via Spring Boot.
+                </p>
+
+                <!-- Feedback Alert Banners -->
+                <div class="alert alert-success" id="alert-success">
+                    <span><i class="fa-solid fa-circle-check"></i></span>
+                    <span class="alert-text">Thank you! Your message has been received.</span>
+                </div>
+
+                <div class="alert alert-danger" id="alert-error">
+                    <span><i class="fa-solid fa-triangle-exclamation"></i></span>
+                    <span class="alert-text">Please check the highlighted fields below.</span>
+                </div>
+
+                <form id="contact-form" novalidate>
+                    <!-- Name Field -->
+                    <div class="form-group">
+                        <label for="contact-name" class="form-label">Full Name <span class="req">*</span></label>
+                        <input 
+                            type="text" 
+                            id="contact-name" 
+                            class="form-control" 
+                            placeholder="e.g. Aditi Sharma" 
+                            required 
+                            minlength="2" 
+                            maxlength="100"
+                        >
+                        <div class="invalid-feedback">Name must be between 2 and 100 characters.</div>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <label for="contact-email" class="form-label">Email Address <span class="req">*</span></label>
+                        <input 
+                            type="email" 
+                            id="contact-email" 
+                            class="form-control" 
+                            placeholder="e.g. aditi@example.com" 
+                            required 
+                            maxlength="100"
+                        >
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+
+                    <!-- Subject Field -->
+                    <div class="form-group">
+                        <label for="contact-subject" class="form-label">Subject <span class="req">*</span></label>
+                        <input 
+                            type="text" 
+                            id="contact-subject" 
+                            class="form-control" 
+                            placeholder="e.g. Table reservation for 4 people / Feedback" 
+                            required 
+                            minlength="3" 
+                            maxlength="150"
+                        >
+                        <div class="invalid-feedback">Subject must be between 3 and 150 characters.</div>
+                    </div>
+
+                    <!-- Message Field -->
+                    <div class="form-group">
+                        <label for="contact-message" class="form-label">Your Message <span class="req">*</span></label>
+                        <textarea 
+                            id="contact-message" 
+                            class="form-control" 
+                            rows="5" 
+                            placeholder="Tell us about your inquiry, preferred date & time, or special dietary request..." 
+                            required 
+                            minlength="10" 
+                            maxlength="2000"
+                        ></textarea>
+                        <div class="invalid-feedback">Message must be between 10 and 2000 characters.</div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary" id="contact-submit-btn" style="width: 100%;">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Google Map Embed Placeholder Container -->
+        <div class="map-container" id="map">
+            <!-- Accessible OpenStreetMap / Google Maps Embed Placeholder -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15552.123456789!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzE3LjgiTiA3N8KwMzUnNDAuNiJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" 
+                title="Sudha Cafe Location Map Placeholder" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="map-placeholder-tag"><i class="fa-solid fa-location-dot" style="margin-right: 6px;"></i> Configurable Cafe Map Location Placeholder</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="color: #FFFFFF; margin-bottom: 15px;">
+                        <div class="logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                        <span>Sudha Cafe</span>
+                    </div>
+                    <p class="footer-desc">
+                        A cozy haven dedicated to artisanal single-origin coffee, wholesome delicacies, and heartfelt hospitality.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" title="Instagram" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" title="Facebook" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" title="Twitter / X" aria-label="Twitter / X">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 24.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.95 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91v-1.68z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">→ Home</a></li>
+                        <li><a href="about.html">→ About Our Cafe</a></li>
+                        <li><a href="menu.html">→ Complete Menu</a></li>
+                        <li><a href="services.html">→ Cafe Services</a></li>
+                        <li><a href="contact.html">→ Contact &amp; Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Mon – Fri:</strong> 8:00 AM – 10:00 PM</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 8px;"><strong>Sat – Sun:</strong> 8:00 AM – 11:00 PM</p>
+                    <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 10px; font-style: italic;">
+                        *Configurable sample schedule
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fa-solid fa-location-dot" style="margin-right: 6px; color: var(--color-caramel);"></i> 42 Heritage Promenade, Coffee Street</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 8px;"><i class="fa-solid fa-phone" style="margin-right: 6px; color: var(--color-caramel);"></i> +91 98765 43210 (Demo)</p>
+                    <p style="font-size: 0.9rem; margin-bottom: 12px;"><i class="fa-solid fa-envelope" style="margin-right: 6px; color: var(--color-caramel);"></i> hello@sudhacafe.example.com</p>
+                    <p style="font-size: 0.8rem; color: rgba(255,255,255,0.5); font-style: italic;">
+                        *Configurable demo coordinates
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sudha Cafe. All rights reserved.</p>
+                <p class="project-credit-tag">BCA 5th Semester Minor Project | Full Stack Java Spring Boot &amp; MySQL</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
